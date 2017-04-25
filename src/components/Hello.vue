@@ -21,11 +21,12 @@
 </template>
 
 <script>
-import {currentcity, searchplace} from 'src/service/getData'
+import { cityGuess } from '@/service/getData'
 
 export default {
   name: 'hello',
   data () {
+    cityGuess();
     return {
       msg: 'Welcome to Your Vue.js App'
     }
